@@ -11,6 +11,7 @@ public class movimineto : MonoBehaviour {
 	
 	}
 	void Update () {
+
 		if(Input.GetKeyDown(KeyCode.Space)){
 
 	
@@ -40,5 +41,12 @@ public class movimineto : MonoBehaviour {
 		rg.velocity=(new Vector2 (velocidad_nave,rg.velocity.y));
 		
 	}
+	void OnCollisionEnter2D(Collision2D objeto){
+	
+		if(objeto.transform.tag == "Enemigo"){
+			Destroy(gameObject);
+		}
 
+
+}
 }
