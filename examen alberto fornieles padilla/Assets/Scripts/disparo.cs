@@ -14,7 +14,7 @@ public class disparo : MonoBehaviour {
 	}
 	void OnCollisionEnter2D(Collision2D objeto){
 		
-		if(objeto.transform.tag == "suelo"){
+		if(objeto.transform.tag == ""){
 			Destroy(gameObject);
 		}
 }

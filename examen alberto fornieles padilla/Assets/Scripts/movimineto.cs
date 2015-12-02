@@ -21,11 +21,7 @@ public class movimineto : MonoBehaviour {
 				//Debug.Log (objeto.transform.tag); // tambien se puede poner Debug.Log (objeto.name); y detectara solo en nombre
 				GameObject nuevo_proyectil=(GameObject)Instantiate(proyectil,transform.position,transform.rotation);//Que cree un objeto llamado proyectil en el lugar de la chistera con la rotacion de esta
 				nuevo_proyectil.GetComponent<Rigidbody2D>().AddForce(new Vector2(0,500)); //Hemos dicho q ese game objet sera un nuevo_proyectil, tras poder localizarlo ya le metemos cosas
-				
-
 		
-
-				
 			}
 
 	
