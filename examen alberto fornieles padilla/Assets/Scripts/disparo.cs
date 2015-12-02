@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class enemigo : MonoBehaviour {
+public class disparo : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -10,7 +10,6 @@ public class enemigo : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
 	
 	}
 	void OnCollisionEnter2D(Collision2D objeto){
@@ -18,6 +17,5 @@ public class enemigo : MonoBehaviour {
 		if(objeto.transform.tag == "suelo"){
 			Destroy(gameObject);
 		}
-	}
-
+}
 }
