@@ -40,4 +40,5 @@ public class movimineto : MonoBehaviour {
 		rg.velocity=(new Vector2 (velocidad_nave,rg.velocity.y));
 		
 	}
+
 }
